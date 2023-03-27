@@ -1,4 +1,8 @@
+nosX = 0;
+nosY = 0;
+
 function preload(){
+   tach =  loadImage('https://i.postimg.cc/3x3QzSGq/m.png');
 }
 
 function setup(){
@@ -11,7 +15,8 @@ posenet.on('pose',gotPoses);
 }
 
 function draw(){
-    image(video, 0,0,700,400)
+    image(video, 0,0,700,400);
+    image(tach, nosX,nosY,100,100);
 }
 
 function cap(){
@@ -24,8 +29,7 @@ function modelLoaded(){
 
 function gotPoses(results){
     if (results.length > 0){
-        console.log(results);
-        console.log("Nose X - " + " " + results[0].pose.nose.x);
-        console.log("Nose Y - " + " " + results[0].pose.nose.y);
+        nosX = results[0].pose.nose.x - 55;
+        nosY = results[0].pose.nose.y  + 20;
     }
 }
