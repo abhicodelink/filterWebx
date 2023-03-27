@@ -1,0 +1,49 @@
+body {
+    background-image: url('5342597.jpg');
+    background-position: center;
+    padding: 1rem;
+}
+.header {
+    width: 100%;
+    border-radius: 20px !important;
+}
+.btn-success {
+font-size: 20px;
+font-weight: 600;
+height: 50px;
+width: 200px;
+margin-top: 40px;
+}
+canvas {
+    border: 8px solid #212529;
+    margin: auto;
+    margin-left: 300px;
+    margin-right: auto;
+    margin-top: 60px;
+    border-radius: 20px;
+    animation: shadows 2s linear infinite;
+    transition: .3s all ease;
+    
+  }
+  
+  @keyframes shadows {
+    0% {
+      box-shadow: 0 0 10px 10px rgb(255, 0, 0);
+    }
+    25% {
+      box-shadow: 0 0 10px 10px rgba(246, 255, 0, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 10px 10px rgba(246, 255, 0, 0.6);
+    }
+    75% {
+      box-shadow: 0 0 10px 10px rgba(246, 255, 0, 0.3);
+    }
+    90% {
+      box-shadow: 0 0 10px 10px rgba(255, 0, 0, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 10px 10px #ca0808;
+    }
+  }
+  
